@@ -178,6 +178,7 @@ let requestPages = (options = {}) => {
 /*
 post-API transform
  */
+
 let ResponseHandler = {
   /**
    * Amend `isPrimary` property to records based on color
@@ -246,6 +247,10 @@ let transformResponse = (response = [], options = {}) => {
   let transformedResponse = ResponseHandler.resolveResponse(response, options);
   return ResponseHandler.resolveResponse(response, options);
 };
+
+/*
+entry point
+ */
 
 /**
  * Take supplied arguments, transform, create request, and transform the response into a desired format
