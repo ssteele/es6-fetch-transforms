@@ -244,7 +244,6 @@ let ResponseHandler = {
    * @return {Object}         Desired data in the proper format
  */
 let transformResponse = (response = [], options = {}) => {
-  let transformedResponse = ResponseHandler.resolveResponse(response, options);
   return ResponseHandler.resolveResponse(response, options);
 };
 
